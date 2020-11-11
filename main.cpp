@@ -21,6 +21,8 @@ int main() {
     cout << "Please enter second natural number: " << endl;
     cin >> b;
 
+    cout << "|A| "<<"|B| "<<"|A%B| " << "|A/B| "<< "x " << "y " << endl;
+
     // Debug
     if(a<b){
         swap(a,b);
