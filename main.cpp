@@ -29,8 +29,8 @@ int main() {
     cin >> a;
     cout << "Please enter second natural number: " << endl;
     cin >> b;
-    int randomGCD = GCD(a,b);
-    cout << "Sollution for " << a << "x + " << b <<"y = "<< randomGCD << " : " << endl;
+    int randomGCDVar = GCD(a,b);
+    cout << "Sollution for " << a << "x + " << b <<"y = "<< randomGCDVar << " : " << endl;
 
     // Debug
     if(a<b){
@@ -43,5 +43,4 @@ int main() {
     cout << "x = " << x << endl;
     cout << "y = " << y << endl;
     cout << "d = " << y%a<< endl; // Compiler bug??
-
 }
