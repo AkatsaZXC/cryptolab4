@@ -8,11 +8,11 @@ int ExtentedGCD(int a, int b, int &x, int &y){
         return a;
     }
     int x1, y1;
-    int defaultGCD = ExtentedGCD(b, a%b,x1,y1);
+    int extendedGCDVar = ExtentedGCD(b, a%b,x1,y1);
     x = y1;
     y = x1 - (a / b) * y1;
     cout << a << " " << b << " "<<  a%b <<" "<< a/b <<" "<< x <<" "<< y << endl;
-    return defaultGCD;
+    return extendedGCDVar;
 }
 int GCD(int a, int b){
     while(a%b != 0){
