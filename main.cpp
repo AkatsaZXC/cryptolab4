@@ -42,5 +42,12 @@ int main() {
     cout << "GCD: " << randomExtendedGCDVar << endl;
     cout << "x = " << x << endl;
     cout << "y = " << y << endl;
-    cout << "d = " << y%a<< endl; // Compiler bug??
+
+    // Because of compiler bug
+    if(y < 0){
+        cout << "d = " << y << " % " << a << " = " << a + y;
+    }else{
+        cout << "d = " << y << " % " << a << " = " << y % a;
+    }
+    // cout << "d = " << y%a<< endl; // Compiler bug??
 }
